@@ -128,7 +128,7 @@ export default function TrackForm() {
                 className="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-4 px-4 rounded-xl flex items-center justify-center transition-colors shadow-md"
               >
                 <Download className="w-5 h-5 mr-2" />
-                ดาวน์โหลด E-book (PDF)
+                ดาวน์โหลด E-book
               </a>
             ) : result.order.status === 'PENDING' ? (
               <Link 
