@@ -64,7 +64,7 @@ export async function processPayment(orderCode: string) {
 
       try {
         const { error: emailError } = await resend.emails.send({
-          from: 'E-book Store <onboarding@resend.dev>', // ใช้ onboarding@resend.dev สำหรับ testing
+          from: 'E-book Store <noreply@e-book-tp.me>', // ใช้อีเมลโดเมนตัวเอง
           to: order.customer_email,
           subject: `ยืนยันการสั่งซื้อหนังสือ ${order.books.title} เรียบร้อยแล้ว`,
           html: `
